@@ -1,0 +1,89 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src",
+    "withGlobalTauri": true
+  },
+  "package": {
+    "productName": "MarkUp",
+    "version": "1.0.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      },
+      "window": {
+        "all": false,
+        "print": false,
+        "setFullscreen": true,
+        "setResizable": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "publisher": "KoolApps Team",
+      "copyright": "Kool Apps Team",
+      "longDescription": "An opensource client for YouTube",
+      "shortDescription": "An opensource client for YouTube",
+      "identifier": "com.tauri.dev",
+      "category": "DeveloperTool",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "externalBin": [],
+      "resources": [],
+      "targets": "all",
+      "deb": {
+        "depends": []
+      },
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "appimage": {
+        "bundleMediaFramework": true
+      },
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": "",
+        "allowDowngrades": false,
+        "wix": {
+          "language": "en-US",
+          "dialogImagePath": "../src/assets/dialogImage.bmp",
+          "bannerPath": "../src/assets/banner.bmp"
+        }
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": false
+    },
+    "windows": [
+      {
+        "title": "MarkUp",
+        "url": "index.html",
+        "fullscreen": false,
+        "focus": true,
+        "resizable": true,
+        "decorations": true,
+        "center": true,
+        "fileDropEnabled": true
+      }
+    ]
+  }
+}
