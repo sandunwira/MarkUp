@@ -13,6 +13,15 @@
   "tauri": {
     "allowlist": {
       "all": false,
+      "fs": {
+        "all": true
+      },
+      "clipboard": {
+        "all": true
+      },
+      "dialog": {
+        "all": true
+      },
       "shell": {
         "all": false,
         "open": true
@@ -28,8 +37,8 @@
       "active": true,
       "publisher": "KoolApps Team",
       "copyright": "KoolApps Team",
-      "longDescription": "An opensource client for YouTube",
-      "shortDescription": "An opensource client for YouTube",
+      "longDescription": "A simple markdown editor app",
+      "shortDescription": "A simple markdown editor app",
       "identifier": "com.koolapps.markup",
       "category": "DeveloperTool",
       "icon": [
@@ -61,9 +70,7 @@
         "timestampUrl": "",
         "allowDowngrades": false,
         "wix": {
-          "language": "en-US",
-          "dialogImagePath": "../src/assets/dialogImage.bmp",
-          "bannerPath": "../src/assets/banner.bmp"
+          "language": "en-US"
         }
       }
     },
@@ -71,7 +78,15 @@
       "csp": null
     },
     "updater": {
-      "active": false
+      "active": false,
+      "dialog": true,
+      "endpoints": [
+        
+      ],
+      "windows": {
+        "installMode": "basicUi"
+      },
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDY1QzBENTJBMUJBQUU5NTAKUldSUTZhb2JLdFhBWmNodjE3cmZjR0pRTlNGVCtCYkxocHpZKzA1cFJrdU4vbTd4Q1l4Ty9YR1QK"
     },
     "windows": [
       {
