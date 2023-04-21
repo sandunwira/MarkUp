@@ -78,10 +78,10 @@
       "csp": null
     },
     "updater": {
-      "active": false,
+      "active": true,
       "dialog": true,
       "endpoints": [
-        
+        "https://markup.koolapps.repl.co/updater.json"
       ],
       "windows": {
         "installMode": "basicUi"
