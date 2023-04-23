@@ -1,6 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/* SCROLLBAR PROPERTIES START ========================================= */
+*::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+}
+*::-webkit-scrollbar-track{
+	background: #e0e0e0;
+}
+*::-webkit-scrollbar-thumb{
+	background-color: #ababab;
+}
+*::-webkit-scrollbar-thumb:hover{
+	background-color: #8f8f8f;
+}
+*::-webkit-scrollbar-thumb:active{
+	background-color: #7a7a7a;
+}
+/* =========================================== SCROLLBAR PROPERTIES END */
+
 *{
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  background: #0f0f0f;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	color: #E6EDF3;
+	background: #0D1117;
+	font-family: 'Arimo', sans-serif;
+}
+
+.editor {
+	display: flex;
+	height: 100vh;
+}
+.editor .CodeMirror {
+	flex: 1;
+	height: 100%;
+}
+.editor .preview {
+	flex: 1;
+	overflow: auto;
+	padding: 35px;
 }

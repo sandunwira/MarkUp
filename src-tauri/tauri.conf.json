@@ -95,9 +95,7 @@
         "fullscreen": false,
         "focus": true,
         "resizable": true,
-        "decorations": true,
-        "center": true,
-        "fileDropEnabled": true
+        "decorations": true
       }
     ]
   }

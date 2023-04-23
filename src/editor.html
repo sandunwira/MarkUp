@@ -2,20 +2,30 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="style.css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>MarkUp</title>
+	<!-- ShowdownJS ========================================================-->
+	<script src="./assets/showdown-2.1.0.js"></script>
+	<!-- CodeMirror ========================================================-->
+	<script src="./assets/codemirror/js/codemirror-6.65.7.js"></script>
+	<script src="./assets/codemirror/js/markdown-6.65.7.js"></script>
+	<link rel="stylesheet" href="./assets/codemirror/css/codemirror-6.65.7.css">
+	<link rel="stylesheet" href="./assets/codemirror/css/dracula-6.65.7.css">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="preview.css">
 
 	<script type="module" src="/main.js" defer></script>
 </head>
 
 <body>
+	<div class="editor">
+		<textarea id="editor"></textarea>
+		<div class="preview" id="preview"></div>
+	</div>
 
-	This is the editor
-	<button onclick="location.href='index.html'">Go Home</button>
-
+	<script src="editor.js"></script>
 </body>
 
 </html>
